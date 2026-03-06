@@ -1,59 +1,99 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<header>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inicial-scale1">
-<title> Workshop CSS básico</title>
-</header>
-<header>
-    <h1> Workshop CSS Básico</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site do Corinthia</title>
+</head>
+<body>
+    <header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-        </ul>
-    </nav>
+        <div id="navbar">
+            
+            <a href="https://www.corinthians.com.br/"> 
+                <img id="icon" src="transferir.png" alt="CORINTHIA">
+            </a>
 
-<main> 
-   <section> 
-    <h2> Introdução</h2>
-    <p>Este é um exemplo de página estrutura com <strong>HTML semântico</strong>para aplicar estilos com CSS. Você também pode usar</em>no texto</p>
-   </section> 
-   <section>
-    <h2> Lsta de tópicos</h2>
-   <ul>
-    <li>Estrutura básica</li>
-     <li>Navegacão</li>
-      <li>Imagens</li>
-       <li>Tabelas</li>
-   </ul>
+            <h2> Simplesmente CORINTHIANS</h2>
+
+            <ul id="links">
+                <li>Arquivos</li>
+                <li>Clube</li>
+                <li>Sair</li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="barra-sticky">CORINTHIANS</div>
+
+        <section class="noticias">
+
+            <div class="noticia">
+                <img class="img_noticia" src="90356dcba03bf67f85b364437093121f.jpg" alt="Senhor Representante do Grêmio">
+                <h3>Toga corintiana</h3>
+                <p>Vai CORINTHIANS!!!</p>
+            </div>
+            
+            <div class="noticia">
+                <img class="img_noticia" src="transferir.jfif" alt="Senhor Representante do Grêmio">
+                <h3>Frieren corintiana</h3>
+                <p>Vai CORINTHIANS!!!</p>
+            </div>
+
+             <div class="noticia">
+                <img class="img_noticia" src="images (1).jfif" alt="Senhor Representante do Grêmio">
+                <h3>Komi corintiana</h3>
+                <p>Vai CORINTHIANS!!!</p>
+            </div>
+
+             <div class="noticia">
+                <img class="img_noticia" src="images (2).jfif" alt="Senhor Representante do Grêmio">
+                <h3>Sakurajima corintiana</h3>
+                <p>Vai CORINTHIANS!!!</p>
+            </div>
+
+             <div class="noticia">
+                <img class="img_noticia" src="2caf06ca1ce08aacdee3f3299dbb6a5b.jpg" alt="Senhor Representante do Grêmio">
+                <h3>Makima corintiana</h3>
+                <p>Vai CORINTHIANS!!!</p>
+            </div>
+
+        </section>
+
+     <section class="posicao">
+      <h2>Escalação</h2>
+         <div class="pos-box">A</div>
+         <div class="pos-box pos-relative">B</div>
+        <div class="pos-box">C</div>
+  </section>
+        <section class="posicao">
+            <h2>position: static</h2>
+
+            <div class="pos-box pos-static">
+                Div static padrão. top/left não mudam a posição.
+            </div>
+        </section>
+
+
+<section class="posicao">
+    <h2>position: relative</h2>
+    <div class="pos-box">A</div>
+    <div class="pos-box pos-relative">B</div>
+    <div class="pos-box">C</div>
 </section>
-<section> 
-    <h2>Imagem</h2>
-    <img src="https://picsum.photos/800/400" alt="Imagem de exemplo">
+
+<section class="posicao">
+    <div class="pai">
+        pai
+        <div class="filho">filho</div>
+    </div>
 </section>
-<section>
-    <h2> Tabela de conteudo</h2>
-    <table border="1">
-        <thead>
-<tr>
-    <Th>recursos</Th>
-    <Th>descrição</Th>
-</tr>
-        </thead>
-        <tbody>
-<tr>
-    <td>Header</td>
-    <td>Parte superior da pagina</td>
-</tr>
-        </tbody>
-        <tfoot>
-<tr>
-    <td colspan="2"></td>/td>
-    <td>Conteúdo principal</td>
-</tr>
-        </tfoot>
-    </table>
-</section>
-</main>
+
+    </main>
+    <footer>
+        <p> Todos os direitos reservados ao professor Ícaro. </p>
+    </footer>
+</body>
 </html>
